@@ -1,5 +1,5 @@
 import React from 'react';
-import {Typography} from "@mui/material";
+import {Paper, Typography} from "@mui/material";
 
 const StringCompression = () => {
 
@@ -22,13 +22,13 @@ const StringCompression = () => {
         return result;
     };
 
-    return <>
-        <Typography>String Compression</Typography>
+    return <Paper sx={{m: '1rem', p: '1rem'}}>
+        <Typography variant="h5" gutterBottom>String Compression</Typography>
         <Typography>{compressString('aabcccccaaa')}</Typography>
         <Typography>{compressString('abcccccaaa')}</Typography>
         <Typography>{compressString('aabcccddccaaa')}</Typography>
         <Typography>{compressString('aazzbcceeecccaaa')}</Typography>
-    </>;
+    </Paper>;
 }
 
 export default StringCompression;

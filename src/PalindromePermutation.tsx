@@ -1,5 +1,5 @@
 import React from 'react';
-import {Typography} from "@mui/material";
+import {Paper, Typography} from "@mui/material";
 
 const PalindromePermutation = () => {
 
@@ -32,10 +32,10 @@ const PalindromePermutation = () => {
     }
 
     return (
-        <>
-            <Typography>Palindrome Permutation?</Typography>
+        <Paper sx={{m: '1rem', p: '1rem'}}>
+            <Typography variant="h5" gutterBottom>Palindrome Permutation?</Typography>
             <Typography>{isPermutation("Tact Coa") ? 'True' : 'False'}</Typography>
-        </>
+        </Paper>
     );
 }
 

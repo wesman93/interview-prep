@@ -1,5 +1,5 @@
 import React from 'react';
-import {Typography} from "@mui/material";
+import {Paper, Typography} from "@mui/material";
 
 const OneAway = () => {
 
@@ -31,13 +31,13 @@ const OneAway = () => {
         return differences <= 1;
     }
 
-    return <>
-        <Typography>One Away</Typography>
+    return  <Paper sx={{m: '1rem', p: '1rem'}}>
+        <Typography variant="h5" gutterBottom>One Away</Typography>
         <Typography>{isOneAway('pale', 'ple') ? 'True' : 'False'}</Typography>
         <Typography>{isOneAway('pales', 'pale') ? 'True' : 'False'}</Typography>
         <Typography>{isOneAway('pale', 'bale') ? 'True' : 'False'}</Typography>
         <Typography>{isOneAway('pale', 'bake') ? 'True' : 'False'}</Typography>
-    </>
+    </Paper>
 };
 
 export default OneAway;
