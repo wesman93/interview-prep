@@ -20,13 +20,13 @@ const PalindromePermutation = () => {
         const perm = Array.from(s.toLowerCase());
         const map = getCountMap(perm);
         let oddCount = 0;
-        map.forEach((value, key) => {
+
+        map.forEach((value) => {
             if(value%2 === 1){
                 oddCount++;
             }
         })
         console.log('map', map);
-
 
         return oddCount%2 === 1;
     }
