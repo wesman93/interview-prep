@@ -8,6 +8,7 @@ import {ThemeProvider, createTheme} from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import {Paper} from "@mui/material";
 import MasterMind from "./MasterMind";
+import ContinuousMedian from "./ContinuousMedian";
 
 const darkTheme = createTheme({
     palette: {
@@ -25,6 +26,7 @@ function App() {
                 <OneAway/>
                 <StringCompression/>
                 <MasterMind/>
+                <ContinuousMedian/>
             </Paper>
         </ThemeProvider>
     );

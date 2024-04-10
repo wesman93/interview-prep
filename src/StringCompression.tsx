@@ -19,7 +19,7 @@ const StringCompression = () => {
         }
         result += char + count;
 
-        return result;
+        return s.length > result.length ? result: s;
     };
 
     return <Paper sx={{m: '1rem', p: '1rem'}}>
@@ -28,6 +28,7 @@ const StringCompression = () => {
         <Typography>{compressString('abcccccaaa')}</Typography>
         <Typography>{compressString('aabcccddccaaa')}</Typography>
         <Typography>{compressString('aazzbcceeecccaaa')}</Typography>
+        <Typography>{compressString('abcxyz')}</Typography>
     </Paper>;
 }
 
