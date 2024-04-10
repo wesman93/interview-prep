@@ -7,6 +7,7 @@ import StringCompression from "./StringCompression";
 import {ThemeProvider, createTheme} from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import {Paper} from "@mui/material";
+import MasterMind from "./MasterMind";
 
 const darkTheme = createTheme({
     palette: {
@@ -23,6 +24,7 @@ function App() {
                 <PalindromePermutation/>
                 <OneAway/>
                 <StringCompression/>
+                <MasterMind/>
             </Paper>
         </ThemeProvider>
     );
